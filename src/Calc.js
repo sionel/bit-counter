@@ -119,14 +119,13 @@ const App = () => {
       input("")
       return;
     }
+    if(Number(e.target.value) ===0) return;
     console.log(e.target.value);
     
     if (e.target.value.slice(-1) === "+") {
-      if(e.target.value.slice(0,e.target.value.length-1) === 0) return
       plusClick();
       return;
     } else if (e.target.value.slice(-1) === "-") {
-      if(e.target.value.slice(0,e.target.value.length-1) === 0) return
       minusClick();
       return;
     }
